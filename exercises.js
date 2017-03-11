@@ -8,7 +8,7 @@ function greeting(guest){ // takes in a parameter named 'guest' which acts like 
  return "Good afternoon " + guest + ".";  // the output value after the function is invoked
 }
 greeting("Mr. Smith"); // invoking or calling the function to execute the code (instructions) inside the function.
-
+console.log('sdsdsdsd');
 // Step Two: Assign the function invocation to a variable.
 var testGreeting = greeting("Mr. Smith"); // assigning the function call into a variable 
 
