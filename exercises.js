@@ -248,13 +248,11 @@ console.log(myFullName);
  * This function will use the previous `createFullName` function above to create a message. For example, if you invoked the function like this: eatFood("Biggie", "Smalls", "Won Ton Soup"); it will display the message "Biggie Smalls eats Won Ton Soup everyday for breakfast."
  * Console.log your result.
  */
-var drink = "smoothies";
-console.log(drink);
 
 function eatFood(firstName, lastName, food){
   return myFullName + " eats " + food + " everyday for breakfast"
   }
-console.log(eatFood("Vasana", "Chiu", drink));
+console.log(eatFood("Vasana", "Chiu", "smoothies"));
 
 /************** ENGAGE HYPERDRIVE **************/
 /* No more training wheels! For the exercises #14-18, use the experience you've
@@ -269,7 +267,7 @@ console.log(eatFood("Vasana", "Chiu", drink));
  * Console.log your result. 
 */
 function shoeSize(inches){
-  return inches * 2.54
+  return inches * 2.54;
 }
 console.log(shoeSize(5));
 
@@ -295,10 +293,17 @@ console.log(allCaps("i believe i can do it"));
  * Console.log your result.
 */
 function oneCap(str){
-  return str.replace(/\w\S*/g, function(txt)
-    {return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});  
+      return str.charAt(0).toUpperCase() + str.slice(1);
 }
 console.log(oneCap("capitalize first letter only"));
+
+//bonus problem: capialize first letter of every word
+
+function capitalize_Words(str)  
+{  
+ return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});  
+}  
+console.log(capitalize_Words('js string exercises'));
 
 /*
  * #17
@@ -310,11 +315,16 @@ console.log(oneCap("capitalize first letter only"));
  * Call this function and pass in a number value.
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
+
+//version 1
 function verifyDrinkingAge(age){
   return age >= 21
 }
 var canDrink = verifyDrinkingAge(19)
 console.log(canDrink);
+
+//version 2
+
 
 /**
  * #18
@@ -332,7 +342,7 @@ function throwParty(canDrink){
 var canParty = throwParty(canDrink);
 console.log(canParty);
 
-
+console.log("hello");
 
 
 
